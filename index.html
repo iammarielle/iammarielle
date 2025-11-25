@@ -10,20 +10,20 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f9f9f9;
+            background: #f4f4f4;
             color: #333;
         }
 
         header {
             background: #6A5ACD;
             color: white;
-            padding: 40px 20px;
             text-align: center;
+            padding: 40px 20px;
         }
 
         header h1 {
             margin: 0;
-            font-size: 36px;
+            font-size: 40px;
         }
 
         header p {
@@ -31,125 +31,108 @@
             margin-top: 10px;
         }
 
-        .section {
+        section {
             padding: 40px 20px;
             max-width: 900px;
             margin: auto;
+            background: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
 
         h2 {
             color: #6A5ACD;
-            border-left: 5px solid #6A5ACD;
-            padding-left: 10px;
+            margin-bottom: 10px;
         }
 
-        .skills-list li {
-            margin: 5px 0;
+        ul {
+            line-height: 1.8;
         }
 
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .project-card {
-            background: white;
+        .project {
+            background: #f0f0ff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border: 1px solid #dcdcff;
         }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: white;
-            margin-top: 30px;
+        .project h3 {
+            margin-top: 0;
         }
 
         a {
             color: #6A5ACD;
             text-decoration: none;
+            font-weight: bold;
         }
 
-        a:hover {
-            text-decoration: underline;
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background: #6A5ACD;
+            color: white;
         }
 
+        @media (max-width: 600px) {
+            header h1 { font-size: 32px; }
+            section { padding: 20px; }
+        }
     </style>
 </head>
+
 <body>
 
-    <!-- HEADER -->
     <header>
         <h1>Marielle Buhay Maming</h1>
-        <p>4th-year Computer Engineering Student | Robotics | IoT | Web Development</p>
+        <p>4th-year Computer Engineering Student | Robotics • IoT • Web Development</p>
     </header>
 
-
-    <!-- ABOUT SECTION -->
-    <div class="section">
+    <section>
         <h2>About Me</h2>
-        <p>
-            I am a 4th-year Computer Engineering student passionate about robotics, IoT, and web development.
-            I enjoy building systems that integrate software, hardware, and automation.
-        </p>
-    </div>
+        <p>Hello! I am <strong>Marielle Buhay Maming</strong>, a passionate and dedicated 4th-year Computer Engineering student.  
+        I love working with <strong>Robotics, IoT systems, sensors, Arduino, and web development</strong>.  
+        I aim to design smarter systems that help improve real-world applications.</p>
+    </section>
 
-
-    <!-- SKILLS SECTION -->
-    <div class="section">
+    <section>
         <h2>Skills</h2>
-        <ul class="skills-list">
+        <ul>
             <li>Arduino Programming</li>
             <li>Python</li>
             <li>HTML / CSS</li>
             <li>Sensors and IoT Systems</li>
+            <li>Basic Web Development</li>
         </ul>
-    </div>
+    </section>
 
-
-    <!-- PROJECTS SECTION -->
-    <div class="section">
+    <section>
         <h2>Projects</h2>
 
-        <div class="projects">
-
-            <div class="project-card">
-                <h3>Project 1: IoT Sensor Monitoring System</h3>
-                <p>A real-time IoT monitoring system using Arduino sensors for temperature and humidity tracking.</p>
-                <p><strong>Technologies:</strong> Arduino, DHT11, LCD, IoT Dashboard</p>
-            </div>
-
-            <div class="project-card">
-                <h3>Project 2: Smart Automation Prototype</h3>
-                <p>An automation project involving servo motors, ultrasonic sensors, and a buzzer for alert control.</p>
-                <p><strong>Technologies:</strong> Arduino, Ultrasonic Sensor, Servo Motor</p>
-            </div>
-
-            <div class="project-card">
-                <h3>Project 3: Web Portfolio System</h3>
-                <p>A personal portfolio website built for GitHub Pages showcasing skills and projects.</p>
-                <p><strong>Technologies:</strong> HTML, CSS</p>
-            </div>
-
+        <div class="project">
+            <h3>Smart Drying System for Danggit</h3>
+            <p>An IoT-based monitoring system that measures real-time temperature and moisture during fish drying.</p>
+            <a href="#">GitHub link (optional)</a>
         </div>
-    </div>
 
+        <div class="project">
+            <h3>Arduino Sensor Alarm System</h3>
+            <p>A simple alert system using sensors and an Arduino microcontroller to detect environmental changes.</p>
+            <a href="#">GitHub link (optional)</a>
+        </div>
 
-    <!-- CONTACT SECTION -->
-    <div class="section">
-        <h2>Contact</h2>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
         <p>Email: <a href="mailto:mariellemaming123@gmail.com">mariellemaming123@gmail.com</a></p>
-        <p>Facebook: <a href="https://www.facebook.com/ILYS1892.6/" target="_blank">Click here</a></p>
-        <p>GitHub: <a href="https://github.com/iammarielle" target="_blank">github.com/iammarielle</a></p>
-    </div>
+        <p>Facebook: <a href="https://www.facebook.com/ILYS1892.6/" target="_blank">facebook.com/ILYS1892.6</a></p>
+    </section>
 
-
-    <!-- FOOTER -->
     <footer>
-        © 2025 Marielle Buhay Maming — Portfolio Website
+        © 2025 Marielle Buhay Maming | Portfolio Site
     </footer>
 
 </body>
